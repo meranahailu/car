@@ -1,0 +1,249 @@
+/* reset*/
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+html,body{
+    scroll-behavior: smooth;
+    /*scroll smoothlly*/
+    height: 100%;
+}
+img,i,a{
+    display: block;
+    max-width: 100%;
+}
+ul li{
+list-style: none;
+ /* list style used for remove dot in listed nav */
+}
+ul li a{
+    text-decoration: none;
+}
+/* reset*/
+header{
+    background-color:#effef9;
+}
+.container{
+    width: 80%;
+    margin-inline:auto; /* it used to center the content*/
+}
+.even-colum{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.625rem 0;
+
+}
+.primary-nav ul{
+    display: flex;/* it used to list horizontal*/
+    justify-content: space-between;/* it make space b/n li*/
+    transition:0.4s ease-in-out;
+}
+.primary-nav ul :hover{
+    transform: scale(1.1); 
+}
+.primary-nav ul li{
+    padding-top: 0.75rem;
+}
+.primary-nav ul li a{
+    color:#3f1a09;
+    text-transform: uppercase;
+    font-weight:bold ;
+}
+.primary-nav ul li::after{
+    content:"" ;
+    width: 0;
+    height:2px ;
+    display: block;
+    background: #a85219;
+    transition: 0.5s;
+}
+.primary-nav ul li:hover::after{
+    width: 100%;
+}
+.ff{
+    width: 200px;
+    height: 200px;
+    margin-bottom: -3rem;
+}
+.div1{
+    width: 200px;
+    height: 200px;
+   animation-name: example;
+   animation-duration: 10s;
+   position: absolute;
+}
+@keyframes example {
+    from{
+        left: 0vw;
+    }
+    to{
+       left :100vw;
+    }
+}
+/* show case */
+.showcase{
+   background: linear-gradient(270deg, #1CD8D2 25%,#93EDC7 72%);
+   color: black; 
+   
+}
+.showcase h1{
+   font-size:3.5rem ;
+}
+.showcase img{
+    padding-left: 4rem;
+    width: 40rem;
+    height: 28rem;
+    transition:0.4s ease-in-out;
+}
+.showcase img:hover{
+    transform: scale(1.4);  
+}
+.pp{
+    font-weight: lighter;
+    padding: 1.6rem 0;/* spacee b/n p and h1*/
+    line-height:1.5 ;/* space b/n word*/
+
+}
+button{
+    padding: 14px 40px;/*top tobottom and right to left*/
+    background: #3f1a09;
+    color: white;
+    border:none ;
+    border-radius: 30px;
+    font-size:0.875rem ; 
+}
+button:hover{
+    background:#f3dd94 ;
+    color:#3f1a09 ;
+    cursor: pointer;/* it change the cursuor*/
+
+}
+/* our product */
+  .four{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: baseline;    
+     align-items: baseline; 
+     margin-left: -6rem;
+     margin-right:-7rem ;
+  }
+  .four1{
+    height: 300px;
+    width: 300px;
+    transition: 2s;
+
+  }
+  .four1:hover{
+    transform: scale(1.1,1.1);
+    background-color:#cafdf0; 
+    box-shadow: 10px 10px 10px rgb(207, 205, 200);
+  }
+.title{
+   text-align: center; 
+}
+.title h1{
+    color: #3f1a09;
+    font-size:3.4rem ;
+}
+.img-wapper{
+ width: 100%;   
+ height:100%;
+}
+.img-wapper img{
+   width: 100%;
+   height: 100%; 
+   object-fit: cover;
+   transition:0.4s ease-in-out;
+}
+.img-wapper img:hover{
+   transform: scale(1.1); 
+}
+.middle-product{
+    background-color:#aff2f2;
+}
+.space{
+    padding:2rem 0 ;
+}
+/* about us */
+.aboutus{
+    background-color: #95fae3;
+    color:black;
+    width: 1340px;
+    --mask: 
+    linear-gradient(#000 0 0) 50%/calc(100% - 55.50px) calc(100% - 55.50px) no-repeat,
+    radial-gradient(farthest-side,#000 98%,#0000) 0 0/60px 60px round;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+.aboutus img{
+    padding:2rem;
+}
+/* contact us */
+form{
+    background:#95fae3;
+    border-radius:30px ;
+    padding: 2rem;
+    margin:2rem;
+}
+label{
+    font-weight: 400;
+    color: #3f1a09;
+}
+.inputs{
+   width: 25rem; 
+   height: 2.5rem;
+   border:1px solid #3f1a09;
+   border-radius:14px;
+   padding-left:1rem;
+   margin-bottom: 1rem;
+}
+.textarea-field{
+    height:9rem;
+    padding-top:0.625rem;
+}
+.contacts{
+    background: linear-gradient(270deg, #1CD8D2 25%,#93EDC7 72%);
+    border-radius: 30px;
+    padding: 2rem;
+    display: grid;/* it used to center the contacts*/
+    place-content: center;
+    width: 25rem;
+}
+i{
+    color: white;
+}
+span{
+   padding-left: 1rem; 
+}
+/* footer */
+footer{
+    background: linear-gradient(270deg, #1CD8D2 25%,#93EDC7 72%);
+    padding: 2rem;
+}
+/* the bottem css used to 4 colum */
+.four-colum{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;/* all footer 4 colum center*/
+    align-items: center;/* all footer 4 colum center*/
+}
+i{
+   padding-top: 1rem; 
+   padding-left: 1rem;/* space b/n contact us and arrow*/
+}
+ul li a{
+    color: white;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+h3{
+    color: white;
+    display: inline;/*it use contact $ arrow in one line*/
+
+}
